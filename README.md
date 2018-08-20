@@ -1,7 +1,7 @@
-# Neurocog
+# Core
 
 ## Version
-0.1.0
+0.2.0
 
 ## Authors / Developers
 - [ObjectOrange](https://github.com/objectorange) - objectorange@protonmail.com
@@ -20,35 +20,9 @@
 
 ### Base Classes
 
-### Articles
-
-### Author
-
-### Feed
-
-### Home
-
-### Info
-
-### Login
-
-### Publish
-
-### Search
-
-### Settings
-
 ## Demo
 
 
 ### Scenario
 
-
-#### Alice
-
-
-#### Bob
-
-
-#### Charlie
 
