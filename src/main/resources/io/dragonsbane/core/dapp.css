@@ -1,0 +1,18 @@
+/*@font-face {*/
+    /*font-family: 'Nexa-Bold';*/
+    /*src: url('nexa_bold.otf');*/
+/*}*/
+/*@font-face {*/
+    /*font-family: 'Nexa-Light';*/
+    /*src: url('nexa_light.otf');*/
+/*}*/
+.root {
+    -fx-background-color: rgb(255, 255, 255);
+}
+.label {
+    -fx-font-size: 20;
+    /*-fx-font-family: Nexa-Bold;*/
+}
+.dragonsbane-bkgcolor {
+    -fx-background-color: #FB0006;
+}

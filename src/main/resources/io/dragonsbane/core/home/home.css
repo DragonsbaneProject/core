@@ -1,0 +1,13 @@
+@import url("../dapp.css");
+.label {
+    -fx-font-size: 20;
+}
+.tab {
+    -fx-font-size: 16;
+}
+.split-pane *.split-pane-divider {
+    -fx-padding: 0 1 0 1;
+}
+.tab-header-background {
+    -fx-background-color: #ffffff ;
+}
