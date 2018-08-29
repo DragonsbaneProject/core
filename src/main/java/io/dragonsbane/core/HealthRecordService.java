@@ -108,7 +108,7 @@ public class HealthRecordService extends BaseService {
 
         properties = p;
         try {
-            this.properties = Config.loadFromClasspath("dgramz-services.config", p, false);
+            this.properties = Config.loadFromClasspath("dragonsbane-services.config", p, false);
         } catch (Exception e) {
             LOG.warning(e.getLocalizedMessage());
         }
