@@ -114,23 +114,23 @@ public class HealthRecordService extends BaseService {
         }
 
         // Subscribe to all Text notifications
-        Subscription subscription = new Subscription() {
-            @Override
-            public void notifyOfEvent(Envelope envelope) {
-                routeIn(envelope);
-            }
-        };
-        SubscriptionRequest r = new SubscriptionRequest(EventMessage.Type.TEXT, subscription);
-        Envelope e = Envelope.documentFactory();
-        DLC.addData(SubscriptionRequest.class, r, e);
-        DLC.addRoute(NotificationService.class, NotificationService.OPERATION_SUBSCRIBE, e);
-        producer.send(e);
+//        Subscription subscription = new Subscription() {
+//            @Override
+//            public void notifyOfEvent(Envelope envelope) {
+//                routeIn(envelope);
+//            }
+//        };
+//        SubscriptionRequest r = new SubscriptionRequest(EventMessage.Type.TEXT, subscription);
+//        Envelope e = Envelope.documentFactory();
+//        DLC.addData(SubscriptionRequest.class, r, e);
+//        DLC.addRoute(NotificationService.class, NotificationService.OPERATION_SUBSCRIBE, e);
+//        producer.send(e);
 
         // Request Local DID
-        Envelope en = Envelope.headersOnlyFactory();
-        DLC.addRoute(HealthRecordService.class, HealthRecordService.OPERATION_RECEIVE_LOCAL_DID, en);
-        DLC.addRoute(DIDService.class, DIDService.OPERATION_GET_LOCAL_DID, en);
-        producer.send(en);
+//        Envelope en = Envelope.headersOnlyFactory();
+//        DLC.addRoute(HealthRecordService.class, HealthRecordService.OPERATION_RECEIVE_LOCAL_DID, en);
+//        DLC.addRoute(DIDService.class, DIDService.OPERATION_GET_LOCAL_DID, en);
+//        producer.send(en);
 
         updateStatus(ServiceStatus.RUNNING);
         LOG.info("Started.");
